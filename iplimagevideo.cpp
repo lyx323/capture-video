@@ -6,7 +6,8 @@ using namespace cv;
 
 int main(int argc, char ** argv)
 {
-  string video_file = "./hiro.mp4";
+  
+  string video_file = "../hiro.mp4";
   CvCapture * capture = 0;
   IplImage * frame, * gray_frame = 0;
 
@@ -30,7 +31,7 @@ int main(int argc, char ** argv)
     if (frame->origin != IPL_ORIGIN_TL)
       cvFlip(gray_frame, gray_frame, 0);
 
-    cvShowImage("capturevedio-demo",gray_frame);
+    cvShowImage("capturevedio-demo",frame);
 
     int64 now = cvGetTickCount();
     double fps = 1e6 * cvGetTickFrequency()/double(now-timer);
@@ -43,7 +44,7 @@ int main(int argc, char ** argv)
 
   cvReleaseImage(&gray_frame);
   cvReleaseCapture(&capture);
-  cvDestroyWindow("ferns-demo");
+  cvDestroyWindow("capturevedio-demo");
 
   return 0;
 }

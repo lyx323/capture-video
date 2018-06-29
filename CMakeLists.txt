@@ -30,5 +30,8 @@ if(NOT OpenCV_FOUND)
 endif()
 include_directories( ${OpenCV_INCLUDE_DIRS} )
 
-add_executable(capturevedio main.cpp)
-target_link_libraries(capturevedio ${OpenCV_LIBS})
+add_executable(Iplimage iplimagevideo.cpp)
+target_link_libraries(Iplimage ${OpenCV_LIBS})
+
+add_executable(Matimage matvideo.cpp)
+target_link_libraries(Matimage ${OpenCV_LIBS})
