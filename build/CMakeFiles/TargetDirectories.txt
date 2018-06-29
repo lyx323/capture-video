@@ -1,4 +1,0 @@
-/home/lyx/personal/my-git/capture-video/build/CMakeFiles/rebuild_cache.dir
-/home/lyx/personal/my-git/capture-video/build/CMakeFiles/edit_cache.dir
-/home/lyx/personal/my-git/capture-video/build/CMakeFiles/Matimage.dir
-/home/lyx/personal/my-git/capture-video/build/CMakeFiles/Iplimage.dir
