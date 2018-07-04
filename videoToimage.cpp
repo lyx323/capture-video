@@ -8,8 +8,8 @@ using namespace cv;
 
 int main(int argc, char ** argv)
 {
-	ofstream file;
-	file.open("/home/lyx/datasets/vedio/hiro.txt");
+    ofstream file;
+    file.open("/home/lyx/datasets/vedio/hiro.txt");
     cv::VideoCapture cap("/home/lyx/datasets/vedio/hiro.mp4");
     long totalFrameNum = cap.get(CV_CAP_PROP_FRAME_COUNT);
     std::cout << "total frame" << totalFrameNum << std::endl;
@@ -28,7 +28,6 @@ int main(int argc, char ** argv)
         //str << currentFrame << ".jpg";
         if (currentFrame % 10 == 0)
         {
-			
             str << count<< ".jpg";
 			string s;
 			str >> s;
