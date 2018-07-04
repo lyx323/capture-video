@@ -37,3 +37,8 @@ target_link_libraries(Iplimage ${OpenCV_LIBS})
 
 add_executable(Matimage matvideo.cpp)
 target_link_libraries(Matimage ${OpenCV_LIBS})
+
+add_executable(Image videoToimage.cpp)
+#target_link_libraries(Image ${Opencv_LIBS})//wrong
+target_link_libraries(Image ${OpenCV_LIBS})
+
